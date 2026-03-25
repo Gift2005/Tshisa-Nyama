@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tshisa Nyama</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Dancing+Script:wght@700&family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo">Tshisa Nyama<small>Santos Bay &mdash; Mossel Bay</small></div>
+  <button class="nav-menu-btn" id="menuBtn" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="nav-dropdown" id="navDropdown">
+  <button class="nav-close-btn" id="closeMenuBtn">&#x2715;</button>
+  <a href="#about">About</a>
+  <a href="#hours">Hours</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<div class="hero-banner">
+  <img src="coverphoto.jpg" alt="Tshisa Nyama">
+  <div class="hero-overlay">
+    <div class="hero-script">Tshisa Nyama</div>
+    <div class="hero-sub">Barbecue Restaurant &mdash; Mossel Bay</div>
+  </div>
+</div>
+
+<div class="info-bar">
+  <a href="tel:+27643810386" class="info-bar-item call-btn">Call Us</a>
+  <div class="info-bar-sep"></div>
+  <span class="info-bar-item" id="today-status" style="color:#6aaa70;">&#9679; Open Now</span>
+</div>
+
+<section class="section" id="about">
+  <div class="section-tag">Welcome</div>
+  <h2>Real Fire,<br>Real Flavour</h2>
+  <p>Tshisa Nyama is a beloved braai and barbecue restaurant in Santos Bay, Mossel Bay — serving up authentic flame-grilled meats, hearty sides and good vibes in a beautiful outdoor setting.</p>
+  <p>Enjoy your meal around the fireplace or outside under the open sky. The perfect spot for family, friends and great food.</p>
+  <div class="tags">
+    <span class="tag">Braai</span>
+    <span class="tag">Barbecue</span>
+    <span class="tag">Outdoor Seating</span>
+    <span class="tag">Fireplace</span>
+    <span class="tag">Family Friendly</span>
+    <span class="tag">Dine In</span>
+  </div>
+</section>
+
+<div class="photo-grid-3">
+  <div class="pg-item" style="min-height:220px;">
+    <img src="outdoorseating.jpg" alt="Outdoor Seating">
+    <div class="pg-label"></div>
+  </div>
+  <div class="right-col">
+    <div class="pg-item"><img src="braai.jpg" alt="Braai"><div class="pg-label"></div></div>
+    <div class="pg-item"><img src="meat.jpg" alt="Meat"><div class="pg-label"></div></div>
+  </div>
+</div>
+
+<div class="banner-block">
+  <img src="menubanner.jpg" alt="Our Menu">
+  <div class="banner-overlay">
+    <div class="banner-script">Our Menu</div>
+    <button class="banner-btn" onclick="openMenu()">View Menu</button>
+  </div>
+</div>
+
+<div class="photo-grid-2">
+  <div class="pg-item"><img src="sides.jpg" alt="Sides"><div class="pg-label"></div></div>
+  <div class="pg-item"><img src="drinks.jpg" alt="Drinks"><div class="pg-label"></div></div>
+</div>
+
+<div class="hours-section" id="hours">
+  <div class="section-tag" style="text-align:center;">We Are Open</div>
+  <h2>Opening Hours</h2>
+  <div style="text-align:center; margin-bottom:1rem;">
+    <span id="today-status2" style="font-size:0.85rem; font-weight:700;"></span><br>
+    <span style="font-size:0.8rem; color:#888;" id="today-hours"></span>
+  </div>
+  <ul class="hours-list">
+    <li><span class="day">Monday</span><span class="time">10:00 AM &ndash; 09:00 PM</span></li>
+    <li><span class="day">Tuesday</span><span class="time">10:00 AM &ndash; 09:00 PM</span></li>
+    <li><span class="day">Wednesday</span><span class="time">10:00 AM &ndash; 09:00 PM</span></li>
+    <li><span class="day">Thursday</span><span class="time">10:00 AM &ndash; 09:00 PM</span></li>
+    <li><span class="day">Friday</span><span class="time">10:00 AM &ndash; 09:00 PM</span></li>
+    <li><span class="day">Saturday</span><span class="time">10:00 AM &ndash; 09:00 PM</span></li>
+    <li><span class="day">Sunday</span><span class="time">10:00 AM &ndash; 09:00 PM</span></li>
+  </ul>
+</div>
+
+<div class="banner-block">
+  <img src="atmosphere.jpg" alt="Atmosphere">
+  <div class="banner-overlay">
+    <div class="banner-script">Come Braai With Us</div>
+    <button class="banner-btn" onclick="openMenu()">View Menu</button>
+  </div>
+</div>
+
+<div class="photo-grid-2">
+  <div class="pg-item"><img src="fireplace.jpg" alt="Fireplace"><div class="pg-label"></div></div>
+  <div class="pg-item"><img src="ourteam.jpg" alt="Our Team"><div class="pg-label"></div></div>
+</div>
+
+<section class="info-section" id="contact">
+  <h2>Find Us</h2>
+  <div class="info-row">
+    <div class="info-icon"></div>
+    <div class="info-text">
+      <strong>Address</strong>
+      <p>1 Short Street<br>Santos Bay, Mossel Bay, 6500</p>
+    </div>
+  </div>
+  <div class="info-row">
+    <div class="info-icon"></div>
+    <div class="info-text">
+      <strong>Phone</strong>
+      <a href="tel:+27643810386">064 381 0386</a>
+    </div>
+  </div>
+</section>
+
+<div class="map-box">
+  <p>1 Short Street, Santos Bay, Mossel Bay, 6500</p>
+  <a href="https://maps.google.com/?q=1+Short+Street+Santos+Bay+Mossel+Bay+6500" target="_blank">Open in Google Maps</a>
+</div>
+
+<footer>
+  <div class="footer-logo">Tshisa Nyama</div>
+  <div class="footer-tagline">Santos Bay &mdash; Mossel Bay</div>
+  <div class="footer-links">
+    <a href="#about">About</a>
+    <a href="#hours">Hours</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <div class="footer-copy">&copy; 2025 Tshisa Nyama. All rights reserved.</div>
+</footer>
+
+<div class="menu-modal" id="menuModal" onclick="if(event.target===this)closeMenu()">
+  <button class="menu-modal-close" onclick="closeMenu()">&#x2715;</button>
+  <div class="menu-modal-header">
+    <div class="menu-modal-title">Our Menu</div>
+  </div>
+  <div class="menu-modal-body">
+    <img src="menuphoto.jpg" alt="Tshisa Nyama Menu">
+  </div>
+  <div class="menu-modal-hint">Pinch to zoom &middot; Tap X to close</div>
+</div>
+
+<div class="sticky-bar">
+  <a href="tel:+27643810386">Call Us</a>
+  <div class="bar-sep"></div>
+  <a href="https://maps.google.com/?q=1+Short+Street+Santos+Bay+Mossel+Bay+6500" target="_blank">Get Directions</a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
